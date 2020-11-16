@@ -34,7 +34,7 @@ export class LoginPage {
                 async token => {
                   localStorage.setItem('token', token);
                   loading.dismiss();
-                  this.router.navigateByUrl('/create');
+                  this.router.navigateByUrl('/principal');
                   this.form.reset();
                 },
                 // Si existe un error
